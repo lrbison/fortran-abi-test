@@ -16,3 +16,5 @@ check: all
 	@echo "The two .so files should be identical if the ABI is stable"
 	@echo -n "    ==> "
 	@diff v1/libfoo.so v2/libfoo.so -s
+	@echo "FC is $(FC)"
+	$(FC) --version
